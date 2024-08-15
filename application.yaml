@@ -7,7 +7,11 @@ spec:
   source:
     repoURL: 'https://github.com/Blvck-roz/gitops-argocd.git'
     targetRevision: HEAD
+<<<<<<< HEAD
     path: '.'
+=======
+    path: 'learning'
+>>>>>>> 5c92b9b (Fix ArgoCD application path)
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
@@ -15,4 +19,7 @@ spec:
     automated:
       prune: true
       selfHeal: true
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c92b9b (Fix ArgoCD application path)
