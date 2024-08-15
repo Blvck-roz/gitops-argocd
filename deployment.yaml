@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: daylight-app
+  namespace: daylight-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: daylight-app
+  template:
+    metadata:
+      labels:
+        app: daylight-app
+    spec:
+      containers:
+      - name: daylight-app-container
+        image: blvkroz/daylight-app-image  
+        ports:
+        - containerPort: 80
